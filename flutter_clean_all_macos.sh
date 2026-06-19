@@ -21,3 +21,8 @@ do
 done
 
 echo "Finished."
+
+
+
+chmod +x flutter_clean_all_macos.sh
+./flutter_clean_all_macos.sh
