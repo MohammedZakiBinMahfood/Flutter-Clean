@@ -24,5 +24,3 @@ echo "Finished."
 
 
 
-chmod +x flutter_clean_all_linux.sh
-./flutter_clean_all_linux.sh
