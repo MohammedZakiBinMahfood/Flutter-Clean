@@ -1,19 +1,14 @@
-# Flutter-Clean
-This script for clean cash for your device if macOs or windows 
-
-
+Flutter Clean
 
 Automatically find and clean all Flutter projects on your machine with a single command.
 
+Overview
 
-
-Flutter Clean All Projects
-
-A simple script that automatically scans your system for Flutter projects ("pubspec.yaml") and runs:
+Flutter Clean is a simple utility script that scans your system for Flutter projects ("pubspec.yaml") and automatically runs:
 
 flutter clean
 
-on every detected project.
+for every detected project.
 
 Supported Platforms
 
@@ -21,15 +16,28 @@ Supported Platforms
 - macOS (Bash/Zsh)
 - Linux (Bash)
 
-Usage (macOS / Linux)
+Project Structure
 
-Make the script executable:
+scripts/
+├── flutter_clean_all.ps1
+├── flutter_clean_all_macos.sh
+└── flutter_clean_all_linux.sh
 
-chmod +x flutter_clean_all.sh
+Usage
 
-Run it:
+Windows
 
-./flutter_clean_all.sh
+.\flutter_clean_all.ps1
+
+macOS
+
+chmod +x flutter_clean_all_macos.sh
+./flutter_clean_all_macos.sh
+
+Linux
+
+chmod +x flutter_clean_all_linux.sh
+./flutter_clean_all_linux.sh
 
 What It Does
 
@@ -40,14 +48,14 @@ What It Does
 
 Requirements
 
-- Flutter SDK installed and available in PATH.
+- Flutter SDK installed and available in your PATH.
 - Permission to access the directories being scanned.
 
 Notes
 
-- The script only cleans Flutter build artifacts.
-- Source code and project files are not modified.
-- Large disks may take some time to scan.
+- The script only removes Flutter build artifacts and cache files.
+- Your source code and project files are not modified.
+- Scanning large drives may take some time.
 
 Example Output
 
@@ -60,3 +68,7 @@ Cleaning: /Users/user/projects/app2
 Done.
 
 Finished.
+
+License
+
+MIT License
